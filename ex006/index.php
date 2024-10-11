@@ -4,62 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula x – Exemplo de PHP</title>
-    <style>
-    body {
-        background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
-        font-family: 'Inter';
-        padding: 0;
-        margin: 0;
-        font-size: 1.2rem;
-    }
-
-    body b {
-        color: #e9e9e9;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    header {
-        display: flex;
-        padding: 5px 15px;
-        background: aliceblue;
-        justify-content: space-between;
-    }
-
-    section {
-        min-height: 77vh;
-        padding: 25px 15px;
-    }
-
-    footer {
-        background: aliceblue;
-        padding: 5px 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        border-top: solid 1px #2CD8D5;
-    }
-
-    footer a {
-        color: blue;
-    }
-
-    .social a {
-        text-decoration: none;
-    }
-
-    a:hover {
-        opacity: 0.8;
-    }
-    </style>
+    <title>M01 Aula 23 – Interação formulários (parte 1)</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -70,12 +16,22 @@
     </header>
 
     <section>
-        <h1>Exemplo de PHP</h1>
-        <?php 
-        date_default_timezone_set("America/Sao_Paulo");
-        echo "Hoje é dia " . date("d/M/Y");
-        echo " e a hora é " . date("G:i:s")
-        ?>
+        <h1>Interação formulários (parte 1)</h1>
+        <br>
+        <div class="flex">
+            <div class="formulario">
+                <h2>Apresente-se para nós</h2>
+                <br>
+                <form action="cad.php" method="get">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="idnome">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="idsobrenome">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+
     </section>
 
     <footer>

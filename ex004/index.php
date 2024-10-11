@@ -196,15 +196,15 @@
         <div class="social">
             <a href="https://www.linkedin.com/in/mateus-lopes-b76a31270/" target="_blank">
                 <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="LinkedIn"
-                    style="width: 40px; height: 40px;">
+                    style="width: 40px; height: 40px;"></a>
 
-                <a href="https://www.behance.net/mateuslopes17" target="_blank">
-                    <img src="https://img.icons8.com/?size=100&id=13655&format=png&color=000000" alt="Behance"
-                        style="width: 40px; height: 40px;">
+            <a href="https://www.behance.net/mateuslopes17" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=13655&format=png&color=000000" alt="Behance"
+                    style="width: 40px; height: 40px;"></a>
 
-                    <a href="https://github.com/nenyrs" target="_blank">
-                        <img src="https://img.icons8.com/?size=100&id=63777&format=png&color=000000" alt="GitHub"
-                            style="width: 40px; height: 40px;"></a>
+            <a href="https://github.com/nenyrs" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=63777&format=png&color=000000" alt="GitHub"
+                    style="width: 40px; height: 40px;"></a>
         </div>
     </footer>
 </body>

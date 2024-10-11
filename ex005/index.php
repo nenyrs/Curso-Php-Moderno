@@ -6,68 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M01 Aula 22 – Strings PHP</title>
     <style>
-    body {
-        background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
-        font-family: 'Inter';
-        padding: 0;
-        margin: 0;
-        font-size: 1.2rem;
-    }
+        body {
+            background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+            font-family: 'Inter';
+            padding: 0;
+            margin: 0;
+            font-size: 1.2rem;
+        }
 
-    .flex {
-        display: flex;
-        gap: 50px;
-    }
+        .flex {
+            display: flex;
+            gap: 50px;
+        }
 
-    body b {
-        color: #e9e9e9;
-    }
+        body b {
+            color: #e9e9e9;
+        }
 
-    h1 {
-        font-size: 2rem;
-    }
+        h1 {
+            font-size: 2rem;
+        }
 
-    h2 {
-        font-size: 1.4rem;
-    }
+        h2 {
+            font-size: 1.4rem;
+        }
 
-    h3 {
-        font-size: 1.2rem;
-    }
+        h3 {
+            font-size: 1.2rem;
+        }
 
-    header {
-        display: flex;
-        padding: 5px 15px;
-        background: aliceblue;
-        justify-content: space-between;
-    }
+        header {
+            display: flex;
+            padding: 5px 15px;
+            background: aliceblue;
+            justify-content: space-between;
+        }
 
-    section {
-        min-height: 77vh;
-        padding: 25px 15px;
-    }
+        section {
+            min-height: 77vh;
+            padding: 25px 15px;
+        }
 
-    footer {
-        background: aliceblue;
-        padding: 5px 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        border-top: solid 1px #2CD8D5;
-    }
+        footer {
+            background: aliceblue;
+            padding: 5px 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border-top: solid 1px #2CD8D5;
+        }
 
-    footer a {
-        color: blue;
-    }
+        footer a {
+            color: blue;
+        }
 
-    .social a {
-        text-decoration: none;
-    }
+        .social a {
+            text-decoration: none;
+        }
 
-    a:hover {
-        opacity: 0.8;
-    }
+        a:hover {
+            opacity: 0.8;
+        }
     </style>
 </head>
 
@@ -265,15 +265,15 @@
         <div class="social">
             <a href="https://www.linkedin.com/in/mateus-lopes-b76a31270/" target="_blank">
                 <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="LinkedIn"
-                    style="width: 40px; height: 40px;">
+                    style="width: 40px; height: 40px;"></a>
 
-                <a href="https://www.behance.net/mateuslopes17" target="_blank">
-                    <img src="https://img.icons8.com/?size=100&id=13655&format=png&color=000000" alt="Behance"
-                        style="width: 40px; height: 40px;">
+            <a href="https://www.behance.net/mateuslopes17" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=13655&format=png&color=000000" alt="Behance"
+                    style="width: 40px; height: 40px;"></a>
 
-                    <a href="https://github.com/nenyrs" target="_blank">
-                        <img src="https://img.icons8.com/?size=100&id=63777&format=png&color=000000" alt="GitHub"
-                            style="width: 40px; height: 40px;"></a>
+            <a href="https://github.com/nenyrs" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=63777&format=png&color=000000" alt="GitHub"
+                    style="width: 40px; height: 40px;"></a>
         </div>
     </footer>
 </body>

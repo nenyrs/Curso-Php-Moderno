@@ -4,78 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula x – Exemplo de PHP</title>
-    <style>
-    body {
-        background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
-        font-family: 'Inter';
-        padding: 0;
-        margin: 0;
-        font-size: 1.2rem;
-    }
-
-    body b {
-        color: #e9e9e9;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    header {
-        display: flex;
-        padding: 5px 15px;
-        background: aliceblue;
-        justify-content: space-between;
-    }
-
-    section {
-        min-height: 77vh;
-        padding: 25px 15px;
-    }
-
-    footer {
-        background: aliceblue;
-        padding: 5px 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        border-top: solid 1px #2CD8D5;
-    }
-
-    footer a {
-        color: blue;
-    }
-
-    .social a {
-        text-decoration: none;
-    }
-
-    a:hover {
-        opacity: 0.8;
-    }
-    </style>
+    <title>Resultado</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <header>
         <p>Curso PHP Moderno com Gustavo Guanabara</p>
         <p>Aluno: Mateus Alves Lopes</p>
     </header>
 
     <section>
-        <h1>Exemplo de PHP</h1>
-        <?php 
-        date_default_timezone_set("America/Sao_Paulo");
-        echo "Hoje é dia " . date("d/M/Y");
-        echo " e a hora é " . date("G:i:s")
-        ?>
+        <h1>Interação formulários (parte 2)</h1>
+        <br>
+        <div class="flex">
+            <div class="formulario">
+                <h2>Resultado do cadastro</h2>
+                <br>
+                <div>
+                    <?php
+                    $nome = $_GET["nome"] ?? "joselito";
+                    $sobrenome = $_GET["sobrenome"] ?? "silva";
+                    echo "<p>É um grande prazer te conhecer, <strong>{$nome} {$sobrenome}!</strong><br> Este é meu primeiro formulário em <strong>PHP.</strong></p><br>";
+
+                    var_dump($_REQUEST); // É uma junção de $_GET + $_POST + $_COOKIES
+                    ?>
+                    <br>
+                    <a href="index.php">Página Inicial</a>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <footer>
