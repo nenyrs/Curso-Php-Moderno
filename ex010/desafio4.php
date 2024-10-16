@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M01 Aula 27b – Cinco desafios</title>
+    <title>Resultado</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <header>
         <p>Curso PHP Moderno com Gustavo Guanabara</p>
         <p>Aluno: Mateus Alves Lopes</p>
@@ -20,13 +19,38 @@
         <br>
         <div class="flex">
             <div class="formulario">
-                <h2>Conversor de Moedas v1</h2>
-                <form action="desafio3.php" method="get">
-                    <label for="din">Qual o valor em R$ que você quer converter?</label>
-                    <input type="number" name="din" id="din">
-                    <input type="submit" value="Converter">
-                </form>
-                </p>
+                <h2>Conversor de Moedas v2</h2>
+                <br>
+                <div>
+                    <?php
+
+                    $inicio = date("m-d-Y", strtotime("-7 days"));
+                    $fim = date("m-d-Y");
+                    $url = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=\'' . $inicio . '\'&@dataFinalCotacao=\'' . $fim . '\'&$top=1&$orderby=dataHoraCotacao%20desc&$format=json&$select=cotacaoCompra,dataHoraCotacao';
+
+                    $dados = json_decode(file_get_contents($url), true);
+
+                    $cotacao = $dados["value"][0]["cotacaoCompra"];
+
+                    $real = $_REQUEST["din"] ?? 0;
+
+                    $dolar = $real / $cotacao;
+
+                    $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
+
+                    //echo "Seus R\$" number_format($real, 2, ",", ".") . " equivalem a <strong>US$" . number_format($dolar, 2, ",", ".");
+
+                    echo "<p>Seus " . numfmt_format_currency($padrao, $real, "BRL") .
+                        " equivalem a <strong>" . numfmt_format_currency($padrao, $dolar, "USD") .
+                        "</strong></p>";
+
+
+                    ?>
+                    <br>
+                    <button onclick="history.go(-1)">Voltar</button>
+                    <br>
+                    <a href="index.php">Página Inicial</a>
+                </div>
             </div>
         </div>
 

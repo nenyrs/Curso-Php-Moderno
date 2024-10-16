@@ -16,11 +16,17 @@
     </header>
 
     <section>
-        <h1>Cinco desafios</h1>
+        <h1>Conversor de Moedas v1</h1>
         <br>
-        <div>
-            <p>sorteador-de-numeros</p>
-            <p>Conversor de Moedas v1</p>
+        <div class="flex">
+            <div class="formulario">
+                <h2>Conversor de Moedas v2</h2>
+                <form action="desafio4.php" method="get">
+                    <label for="din">Qual o valor em R$ que você quer converter?</label>
+                    <input type="number" name="din" id="din">
+                    <input type="submit" value="Converter">
+                </form>
+            </div>
         </div>
 
     </section>

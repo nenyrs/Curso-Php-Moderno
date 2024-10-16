@@ -28,6 +28,8 @@
                     " <br>O seu sucessor é " . ($numero + 1) . "</p>";
                 ?>
                 <br>
+                <button onclick="history.go(-1)">Voltar</button>
+                <br>
                 <a href="index.php">Página Inicial</a>
             </div>
         </div>

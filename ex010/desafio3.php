@@ -30,7 +30,7 @@
                         <strong>*Cotação fixa de R$ $cotacao</strong> informada diretamente no código</p>";
                     ?>
                     <br>
-                    <a href="conversor-de-moedas-v1.php">voltar</a>
+                    <button onclick="history.go(-1)">Voltar</button>
                     <br>
                     <a href="index.php">Página Inicial</a>
                 </div>
