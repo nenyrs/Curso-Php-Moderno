@@ -4,35 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M01 Aula 27b – Cinco desafios</title>
+    <title>Resultado</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <header>
         <p>Curso PHP Moderno com Gustavo Guanabara</p>
         <p>Aluno: Mateus Alves Lopes</p>
     </header>
 
     <section>
-        <h1>Cinco desafios</h1>
+        <h1>Analisador de número Real</h1>
         <br>
-        <div>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/antecessor-e-sucessor.php">Antecessor e
-                    Sucessor</a>
-            </p>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/sorteador-de-numeros.php">Sorteador de
-                    Numeros</a>
-            </p>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/conversor-de-moedas-v1.php">Conversor de
-                    Moedas v1</a>
-            </p>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/conversor-de-moedas-v2.php">Conversor de
-                    Moedas v2</a>
-            </p>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/desafio5.php">Analisador Real</a>
-            </p>
+        <div class="flex">
+            <div class="formulario">
+                <h2>Analisador Real</h2>
+                <p>Digite um número real e veja se ele é inteiro ou real, até 3 casas decimais</p>
+                <br>
+                <div>
+                    <form action="numero.php" method="post">
+                        <label for="num">Número Real:</label>
+                        <input type="number" name="num" id="num" step="0.001">
+                        <input type="submit" value="Analisar">
+                    </form>
+                </div>
+            </div>
         </div>
 
     </section>

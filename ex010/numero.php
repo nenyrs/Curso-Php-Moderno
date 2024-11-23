@@ -16,23 +16,27 @@
     </header>
 
     <section>
-        <h1>Cinco desafios</h1>
+        <h1>Analisador Real</h1>
         <br>
-        <div>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/antecessor-e-sucessor.php">Antecessor e
-                    Sucessor</a>
-            </p>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/sorteador-de-numeros.php">Sorteador de
-                    Numeros</a>
-            </p>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/conversor-de-moedas-v1.php">Conversor de
-                    Moedas v1</a>
-            </p>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/conversor-de-moedas-v2.php">Conversor de
-                    Moedas v2</a>
-            </p>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/desafio5.php">Analisador Real</a>
-            </p>
+        <div class="flex">
+            <div class="formulario">
+                <h2>Analisador de Número Real</h2>
+                <?php
+                $num = $_POST['num'] ?? 0;
+
+                echo "<p>Analisando o número <strong>" .  number_format($num, 3, ",", ".") . "</strong> informado pelo usuário</p>";
+
+                $int = (int) $num;
+                $fra = $num - $int;
+
+                echo "<ul><li> A parte inteira do número é <strong>" . number_format($int, 0, ",", ".") . "</strong></li>";
+
+                echo "<li> A parte fracionária do número é <strong>" . number_format($fra, 3, ",", ".") . "</strong></li></ul>";
+                ?>
+                <br>
+                <a href="index.php">Página Inicial</a>
+                </p>
+            </div>
         </div>
 
     </section>
