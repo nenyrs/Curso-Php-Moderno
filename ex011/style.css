@@ -1,0 +1,114 @@
+body {
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+    font-family: 'Inter';
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.flex {
+    display: flex;
+    gap: 50px;
+}
+
+body b {
+    color: #e9e9e9;
+}
+
+strong {
+    color: black;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+header {
+    display: flex;
+    padding: 5px 15px;
+    background: aliceblue;
+    justify-content: space-between;
+}
+
+section {
+    min-height: 77vh;
+    padding: 25px 15px;
+}
+
+.formulario {
+    width: auto;
+    background: #ffffffad;
+    border-radius: 25px;
+    padding: 50px 25px;
+    width: 350px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+input#idnumero {
+    padding: 4px;
+    padding-left: 15px;
+    border-radius: 8px;
+    border: none;
+    height: 30px;
+    width: 95%;
+    margin-bottom: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    background: #21f3d6;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background: #000000;
+    color: white;
+}
+
+footer {
+    background: aliceblue;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px #2CD8D5;
+}
+
+footer a {
+    color: blue;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
