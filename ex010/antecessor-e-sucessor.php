@@ -25,7 +25,7 @@
                 <div class="form">
                     <form action="desafio1.php" method="get">
                         <label for="numero">Número</label>
-                        <input type="number" name="numero" id="idnumero">
+                        <input type="number" name="numero" id="idnumero" class="input-form" required>
                         <input type="submit" value="Calcular">
                     </form>
                 </div>

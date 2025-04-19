@@ -19,19 +19,20 @@
         <h1>Cinco desafios</h1>
         <br>
         <div>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/antecessor-e-sucessor.php">Antecessor e
+            <p>Desafio 1 - <a href="http://localhost/Curso-Php-Moderno/ex010/antecessor-e-sucessor.php">Antecessor e
                     Sucessor</a>
             </p>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/sorteador-de-numeros.php">Sorteador de
+            <p>Desafio 2 - <a href="http://localhost/Curso-Php-Moderno/ex010/sorteador-de-numeros.php">Sorteador de
                     Numeros</a>
             </p>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/conversor-de-moedas-v1.php">Conversor de
+            <p>Desafio 3 - <a href="http://localhost/Curso-Php-Moderno/ex010/conversor-de-moedas-v1.php">Conversor de
                     Moedas v1</a>
             </p>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/conversor-de-moedas-v2.php">Conversor de
+            <p>Desafio 4 - <a href="http://localhost/Curso-Php-Moderno/ex010/conversor-de-moedas-v2.php">Conversor de
                     Moedas v2</a>
             </p>
-            <p>Desafio - <a href="http://localhost/Curso-Php-Moderno/ex010/desafio5.php">Analisador Real</a>
+            <p>Desafio 5 - <a href="http://localhost/Curso-Php-Moderno/ex010/antecessor-e-sucessor.php">Analisador
+                    Real</a>
             </p>
         </div>
 

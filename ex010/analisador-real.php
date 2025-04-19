@@ -4,29 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M01 Aula 33 – Super globais PHP</title>
+    <title>Resultado</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <header>
         <p>Curso PHP Moderno com Gustavo Guanabara</p>
         <p>Aluno: Mateus Alves Lopes</p>
     </header>
 
     <section>
-        <main>
-            <pre>
-                <?php 
-                    echo "<h1>Super globais GET</h1>";
-                    var_dump($_GET);
-                
-                    echo "<h1>Super globais POST</h1>";
-                    var_dump($_POST);
-                ?>
-            </pre>
-        </main>
+        <h1>Analisador de número Real</h1>
+        <br>
+        <div class="flex">
+            <div class="formulario">
+                <h2>Analisador Real</h2>
+                <p>Digite um número real e veja se ele é inteiro ou real, até 3 casas decimais</p>
+                <br>
+                <div>
+                    <form action="numero.php" method="post">
+                        <label for="num">Número Real:</label>
+                        <input type="number" name="num" id="num" step="0.001" class="input-form">
+                        <input type="submit" value="Analisar">
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <footer>

@@ -23,7 +23,7 @@
                 <h2>Conversor de Moedas v1</h2>
                 <form action="desafio3.php" method="get">
                     <label for="din">Qual o valor em R$ que você quer converter?</label>
-                    <input type="number" name="din" id="din">
+                    <input type="number" name="din" id="din" class="input-form">
                     <input type="submit" value="Converter">
                 </form>
                 </p>

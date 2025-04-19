@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M01 Aula 33 – Super globais PHP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <p>Curso PHP Moderno com Gustavo Guanabara</p>
+      <p>Aluno: Mateus Alves Lopes</p>
+    </header>
+
+    <section class="section-main">
+      <div class="flex-start">
+        <h1 class="titulo">Super Globais do PHP</h1>
+        <h2 class="subtitulo">$_GET</h2>
+        <p class="texto">
+          O super global $_GET é um array associativo que armazena os dados
+          enviados pela URL.
+        </p>
+        <h2 class="subtitulo">$_POST</h2>
+        <p class="texto">
+          O super global $_POST é um array associativo que armazena os dados
+          enviados pela URL.
+        </p>
+        <h2 class="subtitulo">$_REQUEST</h2>
+        <p class="texto">
+          O super global $_REQUEST é um array associativo que armazena
+          informações sobre o servidor e o ambiente em que o PHP está sendo
+          executado.
+        </p>
+        <h2 class="subtitulo">$_COOKIE</h2>
+        <p class="texto">
+          O super global $_COOKIE é um array associativo que armazena
+          informações sobre os cookies do usuário.
+        </p>
+        <h2 class="subtitulo">$_FILES</h2>
+        <p class="texto">
+          O super global $_FILES é um array associativo que armazena informações
+          sobre arquivos enviados pela URL.
+        </p>
+        <h2 class="subtitulo">$_SESSION</h2>
+        <p class="texto">
+          O super global $_SESSION é um array associativo que armazena
+          informações de sessão do usuário.
+        </p>
+        <h2 class="subtitulo">$_ENV</h2>
+        <p class="texto">
+          O super global $_ENV é um array associativo que armazena informações
+          de ambiente do sistema.
+        </p>
+        <h2 class="subtitulo">$_SERVER</h2>
+        <p class="texto">
+          O super global $_SERVER é um array associativo que armazena
+          informações sobre o servidor e o ambiente em que o PHP está sendo
+          executado.
+        </p>
+        <h2 class="subtitulo">$GLOBALS</h2>
+        <p class="texto">
+          O super global $GLOBALS é um array associativo que armazena todas as
+          variáveis globais do PHP.
+        </p>
+      </div>
+
+      <main>
+        <form
+          action="http://localhost/Curso-Php-Moderno/ex011/super-globais.php?tipo=Aluno&nome=Mateus"
+          method="post"
+          class="formulario"
+        >
+          <label for="usuario">Usuário</label>
+          <input type="text" name="usuario" id="usuario" class="input-form" />
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" id="senha" class="input-form" />
+          <input type="submit" value="Enviar" />
+        </form>
+      </main>
+    </section>
+
+    <footer>
+      <p>
+        Copyright&copy;
+        <?= date('Y'); ?>
+        - Todos os direitos reservados | Desenvolvido com ❤ e ☕︎ por
+        <a href="https://codech.com.br/">Mateus Lopes</a>
+      </p>
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/mateus-lopes-b76a31270/"
+          target="_blank"
+        >
+          <img
+            src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000"
+            alt="LinkedIn"
+            style="width: 40px; height: 40px"
+        /></a>
+
+        <a href="https://www.behance.net/mateuslopes17" target="_blank">
+          <img
+            src="https://img.icons8.com/?size=100&id=13655&format=png&color=000000"
+            alt="Behance"
+            style="width: 40px; height: 40px"
+        /></a>
+
+        <a href="https://github.com/nenyrs" target="_blank">
+          <img
+            src="https://img.icons8.com/?size=100&id=63777&format=png&color=000000"
+            alt="GitHub"
+            style="width: 40px; height: 40px"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

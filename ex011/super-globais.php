@@ -4,34 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultado</title>
+    <title>M01 Aula 33 – Super globais PHP</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
         <p>Curso PHP Moderno com Gustavo Guanabara</p>
         <p>Aluno: Mateus Alves Lopes</p>
     </header>
 
     <section>
-        <h1>Analisador de número Real</h1>
-        <br>
-        <div class="flex">
-            <div class="formulario">
-                <h2>Analisador Real</h2>
-                <p>Digite um número real e veja se ele é inteiro ou real, até 3 casas decimais</p>
-                <br>
-                <div>
-                    <form action="numero.php" method="post">
-                        <label for="num">Número Real:</label>
-                        <input type="number" name="num" id="num" step="0.001">
-                        <input type="submit" value="Analisar">
-                    </form>
-                </div>
-            </div>
-        </div>
+        <main>
+            <pre>
+                <?php 
+                    setcookie("nome", "Mateus", time() + 3600);
+                    session_start();
+                    $_SESSION["teste"] = "Funcionou!";                    
+                    
+                    echo "<h1>Superglobal GET</h1>";
+                    var_dump($_GET);
+                
+                    echo "<h1>Superglobal POST</h1>";
+                    var_dump($_POST); 
 
+                    echo "<h1>Superglobal REQUEST</h1>";
+                    var_dump($_SERVER);
+
+                    echo "<h1>Superglobal COOKIES</h1>";
+                    var_dump($_COOKIE);
+
+                    echo "<h1>Superglobal SESSION</h1>";
+                    var_dump($_SESSION);
+
+                    echo "<h1>Superglobal ENV</h1>";
+                    var_dump($_ENV);
+
+                    echo "<h1>Superglobal SERVER</h1>";
+                    var_dump($_SERVER);
+
+                    echo "<h1>Superglobal GLOBALS</h1>";
+                    var_dump($GLOBALS);
+                ?>
+            </pre>
+        </main>
     </section>
 
     <footer>
